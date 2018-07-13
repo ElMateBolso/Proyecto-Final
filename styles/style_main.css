@@ -1,84 +1,147 @@
-body {
-    background-color: #000000;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 /*header*/
-header{
-    margin: 1%;
-    padding: 2%;
-    display: block;
-    background-color: #aa1f00;
-    border-radius: 7px;
+header {
+    justify-content: flex-start;
+    margin-bottom: 390px;
+    width: auto;
+    height: 4.7em;
+    background: #aa1f00;
+    display: flex;
 }
-.logo {
-    float: left;
-    position:relative;  
-    margin-left: 2%;
-    margin-top: 2%;
-    padding: 0px;
-    width: 50px;
-    height: 50px;
-}
-h1 {
-    float: left;
-    position: relative;
-    margin-top: 2%;
-    font-size: 300%;
-    color: #000000;
-}
-nav {
-    width: 27.65%;
-    float:right;
-    position: relative;
-    padding: 0%; 
-    margin-top: 2%;
-    margin-right: 2%;
-    background-color: #000000;
-    border-radius: 7px;
-}
-il {
-    padding: 10px;
-    border-radius: 7px;
-    background-color: #aa1f00;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-a {
-    text-decoration: none;
-    padding: 0px;
-    color: #000000;
-}
-.banner {
-    display: relative;
-    margin-top: 0px;
-    border-radius: 7px;
-    width: 100%;
-    height: 350px;
+    .logonav {
+        position: relative;
+        float: left;
+        margin-top: 1%;
+        margin-left: 6%;
+    }
+    .logo {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    h1 {
+        position: absolute;
+        margin-top: -1.2em;
+        margin-left: 1.07em;
+        font-size: 300%;
+        color: #000000;
+    }
+        a {
+        text-decoration: none;
+        font-weight: bold;
+        }
+    /*barra de navegacion*/
+    nav {
+        background-color: #aa1f00;
+        width: 100%;
+        margin-top: .5%;
+        margin-right: 6%;
+    }
+    nav ul {
+        justify-content: flex-end;
+        display: flex;
+        list-style: none;
+        width: auto;
+        margin: auto;
+    }
+    nav ul li {
+        text-align: center;
+    }
+    nav a:hover {
+        background-color: #000000;
+        color: #aa1f00;
+        border-radius: .3em;
+    }
+    nav ul li a {
+        display: flex;
+        padding: 20px 20px;
+        color: #000000;
+        text-decoration: none;
+        font-size: 120%;
+    }
+    nav ul ul {
+        position: relative;
+        display: block;
+        background: #aa1f00;
+        transform: translateX(60%);
+        opacity: 0;
+        transition: all .5s;
+        z-index: 10;
+    }
+    header ul li:hover ul {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 
-}
+    /*fin de barra de navegacion*/
+    /*banner*/
+    .banner {
+        display: block;
+        position: absolute;
+        margin-top: 7em;
+        margin-left: 1%;
+        width: 97%;
+        height: 300px;
+        border: .4em solid #aa1f00;
+        border-radius: .8em;
+        background-size: 100% 100%;
+        animation: banner 10s infinite;
+        animation-direction: alternate;
+    }
+        @keyframes banner {
+            0%, 30% {
+                background-image: url(http://placeimg.com/1000/300/tech/grayscale);
+                opacity: 1;
+            }
+            31%, 34% {
+                opacity: 0.1;
+            }
+            35%, 65% {
+                background-image: url(http://placeimg.com/1000/300/tech/grayscale?t=1531435641443);
+                opacity: 1;
+            }
+            66%, 69% {
+                opacity: 0.1;
+            }
+            70%, 100% {
+                opacity: 1;
+                background-image: url(http://placeimg.com/1000/300/tech/grayscale?t=1531435651499);
+            }
+        }
+    /*fin del banner*/    
 /*main*/
 main {
     margin: 1%;
     padding: 1%;
     border-radius: 7px;
     background-color:#aa1f00;
-    height: 300px;
+    height: 1100px;
     width: 96%;
-
-}    
-h2 {
-    display: flex;
-    align-items: baseline;
-    top: 0px;
-    margin-left: 3%;
 }
-.top {
-    padding-top: 7px;
-    border-radius: 7px;
-    width: 100%;
-    height: 80px;
-    background-color: #000000;
-}
-.games {
-    padding-left: .65%;
-    width: 9%;
-    height: 70px;
-}
+    .top {
+        display: flex;
+        position: relative;
+        margin-left: 1%;
+        width: 98%;
+        background-color: #ffffff;
+    }
+        .top h2 {
+            border: #000000 dashed;
+            margin: 1%;
+            font-size: 200%;
+            }
+    .toppagos {
+        position: relative;
+        margin-left: 1%;
+        width: 47%;
+        height: 1000px;
+        background-color: #ffffff;
+    }
+    .topgratis {
+        width: 47%;
+        height: 1000px;
+        background-color: #ffffff;
+    }
