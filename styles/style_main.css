@@ -41,42 +41,49 @@ header {
         margin-top: 1em;
         margin-right: 6%;
     }
-    nav ul {
-        justify-content: flex-end;
-        display: flex;
-        list-style: none;
-        width: auto;
-        margin: auto;
-    }
-    nav ul li {
-        text-align: center;
-    }
-    nav a:hover {
-        background-color: #000000;
-        color: #aa1f00;
-        border-radius: .3em;
-    }
-    nav ul li a {
-        display: flex;
-        padding: 20px 20px;
-        color: #000000;
-        text-decoration: none;
-        font-size: 120%;
-    }
-    nav ul ul {
-        position: relative;
-        display: block;
-        background: #aa1f00;
-        transform: translateX(60%);
-        opacity: 0;
-        transition: all .5s;
-        z-index: 10;
-    }
-    header ul li:hover ul {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-
+        nav ul {
+            justify-content: flex-end;
+            display: flex;
+            list-style: none;
+            width: auto;
+            margin: auto;
+            }
+            nav ul li {
+                text-align: center;
+            }
+            nav ul .category {
+                margin-top: .8em;
+                font-size: 150%;
+                font-weight: bold;
+            }
+                .category ul li a {
+                    font-size: 80%;
+                }
+                nav a:hover {
+                    background-color: #000000;
+                    color: #aa1f00;
+                    border-radius: .3em;
+                }
+                nav ul li a {
+                    display: flex;
+                    padding: 20px 20px;
+                    color: #000000;
+                    text-decoration: none;
+                    font-size: 150%;
+                }
+                    nav ul ul {
+                        position: relative;
+                        display: block;
+                        background: #aa1f00;
+                        transform: translateX(60%);
+                        opacity: 0;
+                        transition: all .5s;
+                        z-index: 10;
+                    }
+                        header ul li:hover ul {
+                            opacity: 1;
+                            transform: translateX(0%);
+                        }
     /*fin de barra de navegacion*/
     /*banner*/
     .banner {
@@ -114,14 +121,6 @@ header {
         }
     /*fin del banner*/    
 /*main*/
-main {
-    margin: 1%;
-    padding: 1%;
-    border-radius: 7px;
-    background-color:#aa1f00;
-    height: 1100px;
-    width: 96%;
-}
     .top {
         display: flex;
         margin-left: 1%;
@@ -148,7 +147,8 @@ main {
             margin-right: 0px;
             width: 47%;
             height: 1030px;
-            background-color: #ffffff;
+            background-color: #aa1f00;
+            border-radius: .3em;
         }
             .toppagos ul {
                 list-style: none;
@@ -160,8 +160,12 @@ main {
                     margin-bottom: 3%;
                     margin-right: 2%
                 }
-                .toppagos ul li:nth-child(odd) {;
+                .toppagos ul li:nth-child(odd) {
                     background-color: #d1d1d1;
+                    border-radius: .3em;
+                }
+                .toppagos ul li:nth-child(even) {
+                    background-color: #919191;
                     border-radius: .3em;
                 }
                     .toppagos ul li img {
@@ -175,7 +179,9 @@ main {
             margin-right: 0px;
             width: 47%;
             height: 1030px;
-            background-color: #ffffff;
+            background-color: #aa1f00;
+            border-radius: .3em;
+            ;
         }
             .topgratis ul {
                 list-style: none;
@@ -189,6 +195,10 @@ main {
                 }
                 .topgratis ul li:nth-child(even) {
                     background-color: #d1d1d1;
+                    border-radius: .3em;
+                }
+                .topgratis ul li:nth-child(odd) {
+                    background-color: #919191;
                     border-radius: .3em;
                 }
                     .topgratis ul li img {
