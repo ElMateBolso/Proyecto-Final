@@ -115,28 +115,28 @@ header {
         border-radius: .3em;
     }
         .total tr td img {
+            position: relative;
             margin-top: 4%;
             margin-left: 21%;
         }
         .total tr td .free {
-            position: absolute;
-            margin-top: 16.53%;
-            margin-left: 9.2%; 
+            position: relative;
+            padding: .7%;
             background-color: #04b404;
             border-radius: .7em;
             font-size: 115%;
-            width: 5.5%;
+            width: max-content;
             height: 1em;
             text-align: center;
             padding-bottom: .11%;
         }
         .total tr td p {
+            margin-top: 1.5%;
             text-align: center;
         }
-            .total tr td p span {
-                position: absolute;
-                margin-top: -18.5%;
-                margin-left: -2%;
+            .njuego {
+                float: left;
+                width: 90%;
                 font-size: 120%;
                 color: #ffffff;
             }

@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+body {
+    min-width: 580px;
+}
 /*header*/
 header {
     justify-content: flex-start;
@@ -38,6 +41,7 @@ header {
     nav {
         background-color: #aa1f00;
         width: 100%;
+        min-width: 540px;
         margin-top: 1em;
         margin-right: 6%;
     }
@@ -91,24 +95,35 @@ h2 {
     margin-top: -28%;
     width: 70%;
 }
+
 .principal {
-    margin: 1% 0 0 2.5%;
+    margin: 1% 0 0 2%;
 }
 .secundaria {
-    margin: 1% 0 0 2.5% 
+    display: inline;
+    margin: 0% 0 0 2% 
+}
+.val {
+    width: max-content;
+    margin-left: 70%;
+    padding: .7% .7% .5% .7%;
+    color: #ffff00;
+    background-color: #04b404;
+    font-size: 150%;
+    border-radius: .7em .7em  0 0;
 }
 .price {
-    font-size: 250%;
-    position: absolute;
-    margin-top: -15%;
-    margin-left: 73%;
+    margin-left: 65%;
     padding: 0 .7% .7% .7%;
-    width: 23%; 
     background-color: #04b404;
     color: #ffff00;
-    border-radius: .5em .5em .5em .5em;
+    border-radius: .5em;
+    font-size: 250%;
+    width: max-content;
+    height: 1em;
+    text-align: center;
 }
-article p {
+article .des {
     position: relative;
     margin: auto;
     margin-top: 1%;
@@ -120,21 +135,12 @@ article p {
     font-size: 110%;
     border-radius: .7em;
 }
-article p span {
+article .des span {
     color: #ffffff;
     float: left;
     width: 15%;
     margin-top: -2%;
     font-size: 130%;
-}
-.val {
-    position: absolute;
-    margin: -17.5% 2% 0 78.9%;
-    padding: .7% .7% .5% .7%;
-    color: #ffff00;
-    background-color: #04b404;
-    font-size: 150%;
-    border-radius: .7em .7em  0 0;
 }
 .req {
     position: relative;

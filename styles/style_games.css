@@ -85,79 +85,83 @@ header {
                             transform: translateX(0%);
                         }
     /*fin barra de navegacion*/
-    .titulo {
-        position: absolute;
-        margin: auto;
-        width: 80%;
-        margin-left: 10%;
-        margin-top: -1.15em;
-        background-color: #919191;
-        text-align: center;
-        border-radius: .13em .13em 0 0;
-    }
-    .total {
-        position: relative  ;
-        margin: auto;
-        width: 80%;
-        margin-top: -22%;
+.titulo {
+    position: absolute;
+    margin: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -1.15em;
+    background-color: #919191;
+    text-align: center;
+    border-radius: .13em .13em 0 0;
+}
+.total {
+    position: relative;
+    margin: auto;
+    margin-top: -23%;
+    margin-bottom: 2%;
+    width: 90%;
+    padding: 2%;
+    background-color: #919191;
+    border-radius: .3em;
+}
+.total table {
+    margin: auto;
+    width: 100%;
+}
+    .total tr td {
         padding: 1%;
-        background-color: #919191;
+        background-color: #aa1f00;
         border-radius: .3em;
-
     }
-        .total tr td {
-            padding: 2%;
-            margin: 1%;
-            background-color: #aa1f00;
-            border-radius: .3em;
+        .total tr td img {
+            position: relative;
+            margin-top: 4%;
+            margin-left: 21%;
         }
-            .total tr td p {
-                text-align: center;
-            }
-                .total tr td p span {
-                    font-size: 120%;
-                    color: #ffffff;
-                }
-            .total tr td span {
-                float: right;
+        .total tr td .price {
+            position: relative;
+            padding: .7%;
+            background-color: #04b404;
+            border-radius: .7em;
+            font-size: 115%;
+            width: max-content;
+            height: 1em;
+            text-align: center;
+            padding-bottom: .11%;
+        }
+        .total tr td p {
+            margin-top: 1.5%;
+            text-align: center;
+        }
+            .njuego {
+                float: left;
+                width: 90%;
+                font-size: 120%;
                 color: #ffffff;
             }
-            .total tr td em {
-                color: #ffff00;
-                float: right;
-            }
-            .total tr td .price {
-                position: absolute;
-                margin-top: 15%;
-                margin-left: 6%; 
-                background-color: #04b404;
-                border-radius: .7em;
-            }
-            .total tr td img {
-                margin-top: -8%;
-                margin-left: 6%;
-            }
-            .total tr td .free {
-                font-size: 115%;
-                width: 5.5%;
-                height: 1em;
-                text-align: center;
-                padding-bottom: .11%;
-            }
-    /*footer*/
-    footer {
-        position: relative;
-        margin: auto;
-        margin-top: 1%;
-        width: 100%;
-        background-color: #000000;
-    }
-        footer a {
+        .total tr td span {
+            float: right;
             color: #ffffff;
         }
-        footer li {
-            text-align: center;
-            margin: auto;
-            width: 4%;
-            padding: .5%;
+        .total tr td em {
+            color: #ffff00;
+            float: right;
         }
+/*footer*/
+footer {
+    position: relative;
+    margin: auto;
+    margin-top: 1%;
+    width: 100%;
+    background-color: #000000;
+}
+    footer a {
+        color: #ffffff;
+    }
+    footer li {
+        text-align: center;
+        margin: auto;
+        width: 4%;
+        padding: .5%;
+    }

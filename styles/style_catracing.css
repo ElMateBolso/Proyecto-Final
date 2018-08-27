@@ -96,35 +96,49 @@ header {
     border-radius: .13em .13em 0 0;
 }
 .total {
-    position: relative  ;
+    position: relative;
     margin: auto;
-    width: 80%;
-    margin-top: -22%;
-    padding: 1%;
+    margin-top: -23%;
+    margin-bottom: 2%;
+    width: 90%;
+    padding: 2%;
     background-color: #919191;
     border-radius: .3em;
-
 }
-    .total table {
-        position: relative;
-        margin: auto;
-        width: 80%;
-    }
+.total table {
+    margin: auto;
+    width: 100%;
+}
     .total tr td {
-        padding: 2%;
-        margin: 1%;
+        padding: 1%;
         background-color: #aa1f00;
         border-radius: .3em;
     }
+        .total tr td img {
+            position: relative;
+            margin-top: 4%;
+            margin-left: 21%;
+        }
+        .total tr td .price {
+            position: relative;
+            padding: .7%;
+            background-color: #04b404;
+            border-radius: .7em;
+            font-size: 115%;
+            width: max-content;
+            height: 1em;
+            text-align: center;
+            padding-bottom: .11%;
+        }
         .total tr td p {
+            margin-top: 1.5%;
             text-align: center;
         }
-            .total tr td p span {
-                position: absolute;
+            .njuego {
+                float: left;
+                width: 90%;
                 font-size: 120%;
                 color: #ffffff;
-                margin-top: -24%;
-                margin-left: -2%;
             }
         .total tr td span {
             float: right;
@@ -134,31 +148,11 @@ header {
             color: #ffff00;
             float: right;
         }
-        .total tr td .price {
-            position: absolute;
-            margin-top: 20.5%;
-            margin-left: 10.3%; 
-            background-color: #04b404;
-            border-radius: .7em;
-        }
-        .total tr td img {
-            margin-top: 0%;
-            margin-left: 17%;
-        }
-        .total tr td .free {
-            font-size: 115%;
-            width: 5.5%;
-            height: 1em;
-            text-align: center;
-            padding-bottom: .11%;
-            margin-left: 11.7%;
-            margin-top: 20.3%;
-        }
     /*footer*/
 footer {
     position: relative;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 3.3%;
     width: 100%;
     background-color: #000000
 }
@@ -166,7 +160,6 @@ footer {
         color: #ffffff;
     }
     footer li {
-        text-align: center;
         margin: auto;
         width: 3%;
         padding: .5%;
