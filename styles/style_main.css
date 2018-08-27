@@ -121,103 +121,121 @@ header {
         }
     /*fin del banner*/    
 /*main*/
-    .top {
-        display: flex;
-        margin-left: 1%;
-        width: 98%;
-        background-color: #ffffff;
-        font-style: italic;
+.top {
+    display: flex;
+    margin-left: 6.3%;
+    margin-top: -2%;
+    width: 88%;
+    background-color: #aa1f00;
+    border-radius: .3em .3em 0 0;
+    font-style: italic;
+}
+    .topp {
+        float: left;
+        font-size: 150%;
+        margin-left: 4%;
+        }
+    .topg {
+        float: right;
+        font-size: 150%;
+        margin-left: 32%;
     }
-        .topp {
+.tops {
+    position: relative;
+    height: 1145px;
+}
+        .toppagos ul {
             float: left;
-            font-size: 150%;
-            margin-left: 4%;
-            padding-bottom: .5%;
-            }
-        .topg {
-            float: right;
-            font-size: 150%;
-            margin-left: 32%;
-        }
-    .tops {
-        width: 99%;
-    }
-        .toppagos {
-            float: left;
+            width: 48%;
+            position: relative;
+            list-style: none;
             margin-left: 1%;
-            margin-right: 0px;
-            width: 47%;
-            height: 1135px;
+            padding-top: 1%;
             background-color: #aa1f00;
-            border-radius: .3em;
+            border-radius: .3em 0 .3em .3em;    
         }
-            .toppagos ul {
-                list-style: none;
-                margin-top: 7%;
-                margin-left: 3%;    
-            }
-                .toppagos ul li {
-                    display: inline-block;
-                    margin-bottom: 3%;
-                    margin-right: 2%
-                }
-                .toppagos ul li:nth-child(odd) {
-                    background-color: #d1d1d1;
-                    border-radius: .3em;
-                }
-                .toppagos ul li:nth-child(even) {
-                    background-color: #919191;
-                    border-radius: .3em;
-                }
-                    .toppagos ul li img {
-                        float: left;
-                        margin-right: 2%;
-                    }
-                    .toppagos ul li p {
-                        text-align: center;
-                        padding-top: 4.5%;
-                    }
-        .topgratis {
-            float: right;
-            margin-left: 1%;
-            margin-right: 0px;
-            width: 47%;
-            height: 1135px;
-            background-color: #aa1f00;
-            border-radius: .3em;
-            ;
-        }
-            .topgratis ul {
-                list-style: none;
-                margin-top: 7%;
+            .toppagos ul li {
+                display: inline-block;
+                margin-bottom: 3%;
+                margin-right: 2%;
                 margin-left: 3%;
+                border: #000000 10px;
             }
-                .topgratis ul li {
-                    display: inline-block;
-                    margin-bottom: 3%;
-                    margin-right: 2%;
+            .toppagos ul li:nth-child(odd) {
+                background-color: #d1d1d1;
+                border-radius: .3em;
+            }
+            .toppagos ul li:nth-child(even) {
+                background-color: #919191;
+                border-radius: .3em;
+            }
+                .toppagos ul li img {
+                    float: left;
+                    margin-right: 1%;
+                    margin-left: -1%;
+                    border-radius: .3em 0 0 .3em;
                 }
-                .topgratis ul li:nth-child(even) {
-                    background-color: #d1d1d1;
-                    border-radius: .3em;
+                .toppagos ul li p {
+                    text-align: center;
+                    padding-top: 4.5%;
                 }
-                .topgratis ul li:nth-child(odd) {
-                    background-color: #919191;
-                    border-radius: .3em;
-                }
-                    .topgratis ul li img {
-                        float: left;
-                        margin-right: 2%;
+                    .toppagos ul li p em {
+                        font-size: 150%;
+                        color: #aa1f00;
+                        font-weight: bold;
                     }
-/*footer*/
-.footer {
+        .topgratis ul {
+            position: relative;
+            float: right;
+            width: 48%;
+            list-style: none;
+            margin-right: 1%;
+            padding-top: 1%;
+            background-color: #aa1f00;
+            border-radius: 0 .3em .3em .3em;
+        }
+            .topgratis ul li {
+                display: inline-block;
+                margin-bottom: 3%;
+                margin-right: 2%;
+                margin-left: 3%;
+                border: #000000 10px;
+            }
+            .topgratis ul li:nth-child(even) {
+                background-color: #d1d1d1;
+                border-radius: .3em;
+            }
+            .topgratis ul li:nth-child(odd) {
+                background-color: #919191;
+                border-radius: .3em;
+            }
+                .topgratis ul li img {
+                    float: left;
+                    margin-right: 1%;
+                    margin-left: -1%;
+                    border-radius: .3em 0 0 .3em;
+                }
+                .topgratis ul li p {
+                    text-align: center;
+                    padding-top: 4.5%;
+                }
+                    .topgratis ul li p em {
+                        font-size: 150%;
+                        color: #aa1f00;
+                        font-weight: bold;
+                    }
+/*footer*/                   
+footer {
+    position: relative;
     background-color: #000000;
-    width: 100%;
-    height: 3em;
-    margin-top: 1145px;
+    height: 63px;
 }
-.footer a {
-    color: #ffffff;
-    list-style: none;
-    margin-left: 48%;
-}
+    footer a {
+        color: #ffffff;
+    }
+    footer li {
+        margin: auto;
+        width: 4%;
+        padding: .5%;
+        list-style: none;
+    }

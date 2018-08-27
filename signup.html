@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <title>GameZone</title>
         <link rel="icon" href="images/logo.png">
-        <!--<link rel="stylesheet" href="styles/style_main.css">-->
+        <link rel="stylesheet" href="styles/style_signup.css">
     </head>
     <body>
         <header>
@@ -37,22 +37,30 @@
                                 <h2>Formulario <span>Registro</span></h2>
                             </div>		
                             <form>
-                                Nombre:<input type="text"  name="nombre" required autofocus maxlength="30">
+                                <span class="nombre">Nombre:</span><br><input type="text"  name="nombre" required autofocus maxlength="30">
                                 <br>
-                                Apellido:<input type="text" name="apellido" required maxlength="30">
+                                <span class="apellido">Apellido:</span><br><input type="text" name="apellido" required maxlength="30">
                                 <br>
-                                Email:<input type="email" name="email" required>
+                                <span class="email">Email:</span><br><input type="email" name="email" required>
                                 <br>
-                                Contraseña:<input type="password" name="contraseña" required minlength="8" maxlength="24" >
+                                <span class="contraseña">Contraseña:</span><br><input type="password" name="contraseña" required minlength="8" maxlength="24" >
                                 <br>
-                                Repetir contraseña:<input type="password" name="repetircontraseña" required minlength="8" maxlength="24" >
+                                <span class="repetircontraseña">Repetir contraseña:</span><br><input type="password" name="repetircontraseña" required minlength="8" maxlength="24" >
                                 <div>
-                                    <input type="submit" value="REGISTRAR">
+                                    <input class="registrar" type="submit" value="REGISTRAR">
                                 </div>
                             </form>
                         </div>
                 </article>
             </section>
         </main>
+        <footer>
+            <div class="footer">
+                <ul>
+                    <li><a href="games.html" class="ju3">Juegos</a></li>
+                    <li><a href="Contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>        

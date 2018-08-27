@@ -84,80 +84,84 @@ header {
                             opacity: 1;
                             transform: translateX(0%);
                         }
-    /*fin barra de navegacion*/
-    .titulo {
-        position: absolute;
-        margin: auto;
-        width: 80%;
-        margin-left: 10%;
-        margin-top: -1.15em;
-        background-color: #919191;
-        text-align: center;
-        border-radius: .13em .13em 0 0;
-    }
-    .total {
-        position: relative  ;
-        margin: auto;
-        width: 80%;
-        margin-top: -22%;
+    /*fin de barra de navegacion*/
+.juegos {
+    position: absolute;
+    margin: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -1.15em;
+    background-color: #919191;
+    text-align: center;
+    border-radius: .13em .13em 0 0;
+}
+.total {
+    position: relative;
+    margin: auto;
+    margin-top: -23%;
+    margin-bottom: 2%;
+    width: 80%;
+    padding: 2%;
+    background-color: #919191;
+    border-radius: .3em;
+}
+.total table {
+    margin: auto;
+    width: 90%;
+}
+    .total tr td {
         padding: 1%;
-        background-color: #919191;
+        background-color: #aa1f00;
         border-radius: .3em;
-
     }
-        .total tr td {
-            padding: 2%;
-            margin: 1%;
-            background-color: #aa1f00;
-            border-radius: .3em;
+        .total tr td img {
+            margin-top: 4%;
+            margin-left: 21%;
         }
-            .total tr td p {
-                text-align: center;
-            }
-                .total tr td p span {
-                    font-size: 120%;
-                    color: #ffffff;
-                }
-            .total tr td span {
-                float: right;
+        .total tr td .free {
+            position: absolute;
+            margin-top: 16.53%;
+            margin-left: 9.2%; 
+            background-color: #04b404;
+            border-radius: .7em;
+            font-size: 115%;
+            width: 5.5%;
+            height: 1em;
+            text-align: center;
+            padding-bottom: .11%;
+        }
+        .total tr td p {
+            text-align: center;
+        }
+            .total tr td p span {
+                position: absolute;
+                margin-top: -18.5%;
+                margin-left: -2%;
+                font-size: 120%;
                 color: #ffffff;
             }
-            .total tr td em {
-                color: #ffff00;
-                float: right;
-            }
-            .total tr td .price {
-                position: absolute;
-                margin-top: 15%;
-                margin-left: 6%; 
-                background-color: #04b404;
-                border-radius: .7em;
-            }
-            .total tr td img {
-                margin-top: -8%;
-                margin-left: 6%;
-            }
-            .total tr td .free {
-                font-size: 115%;
-                width: 5.5%;
-                height: 1em;
-                text-align: center;
-                padding-bottom: .11%;
-            }
-    /*footer*/
-    footer {
-        position: relative;
-        margin: auto;
-        margin-top: 1%;
-        width: 100%;
-        background-color: #000000;
-    }
-        footer a {
+        .total tr td span {
+            float: right;
             color: #ffffff;
         }
-        footer li {
-            text-align: center;
-            margin: auto;
-            width: 4%;
-            padding: .5%;
+        .total tr td em {
+            color: #ffff00;
+            float: right;
         }
+/*footer*/
+footer {
+    position: relative;
+    margin: auto;
+    margin-top: 1%;
+    width: 100%;
+    background-color: #000000
+}
+    footer a {
+        color: #ffffff;
+    }
+    footer li {
+        text-align: center;
+        margin: auto;
+        width: 3%;
+        padding: .5%;
+    }
