@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="styles/style_contact.css">
         <title>GameZone-Contacto</title>
     </head>
     <body>
@@ -33,16 +34,24 @@
             <section>
                 <article>
                     <form>
-                        Nombre: <input type="text" name="Nombre" maxlength="30" required autofocus>
+                        <span class="nombre">Nombre:</span><br><input type="text" name="Nombre" maxlength="30" required autofocus>
                         <br>
-                        Email: <input type="email" name="Email" required>
+                        <span class="email">Email:</span><br><input type="email" name="Email" required>
                         <br>
-                        Mensaje: <textarea name="Mensaje" cols="50" rows="5">Escribe tu mensaje</textarea>
+                        <span class="mensaje">Mensaje:</span><br><textarea name="Mensaje" cols="40" rows="5">Escribe tu mensaje</textarea>
                         <br>
-                        <input type="submit" name="enviar form" value="Enviar">
+                        <input class="enviar" type="submit" name="enviar form" value="Enviar">
                     </form>
                 </article>
             </section>
         </main>
+        <footer>
+            <div class="footer">
+                <ul>
+                    <li><a href="games.html" class="ju3">Juegos</a></li>
+                    <li><a href="Contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </footer>  
     </body>
 </html>
