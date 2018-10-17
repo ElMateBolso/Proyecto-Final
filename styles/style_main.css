@@ -4,80 +4,66 @@
 }
 /*header*/
 header {
-    justify-content: flex-start;
-    margin-bottom: 390px;
-    width: auto;
+    margin: auto;
+    width: 100%;
     height: 5em;
-    background: #aa1f00;
+    background: -moz-linear-gradient(top, #8414BC 0%, #ffffff 53%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #8414BC 0%,#ffffff 53%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #8414BC 0%,#ffffff 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     display: flex;
 }
-    .logonav {
-        position: relative;
-        float: left;
-        margin-top: 1%;
-        margin-left: 6%;
-    }
     .logo {
-        position: relative;
-        margin-top: .5em;
-        width: 50px;
+        margin-top: 1.5em;
+        margin-left: 7.6em;
+        width: 250px;
         height: 50px;
     }
-    h1 {
-        position: absolute;
-        margin-top: -1.1em;
-        margin-left: 1.07em;
-        font-size: 300%;
-        color: #000000;
-    }
-        a {
-        text-decoration: none;
-        font-weight: bold;
-        }
     /*barra de navegacion*/
     nav {
-        background-color: #aa1f00;
         width: 100%;
         margin-top: 1em;
-        margin-right: 6%;
+        margin-right: 6em;
     }
         nav ul {
             justify-content: flex-end;
             display: flex;
             list-style: none;
-            width: auto;
-            margin: auto;
             }
             nav ul li {
                 text-align: center;
+                font-family: varela-round, sans-serif;
+                color: #1F86CB;
             }
+            nav ul li:hover {
+                color: #1FCBA3;
+            }
+            
             nav ul .category {
-                margin-top: .8em;
-                font-size: 150%;
-                font-weight: bold;
+                margin-top: 1.05em;
+                font-size: 120%;
             }
                 .category ul li a {
                     font-size: 80%;
                 }
                 nav a:hover {
-                    background-color: #000000;
-                    color: #aa1f00;
-                    border-radius: .3em;
+                    color: #1FCBA3;
                 }
                 nav ul li a {
                     display: flex;
                     padding: 20px 20px;
-                    color: #000000;
+                    color: #1F86CB;
                     text-decoration: none;
-                    font-size: 150%;
+                    font-size: 120%;
                 }
                     nav ul ul {
                         position: relative;
                         display: block;
-                        background: #aa1f00;
+                        background: -moz-linear-gradient(top, #ffffff 25%,#8414BC 100%); /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top, #ffffff 25%,#8414BC 100%); /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom, #ffffff 25%,#8414BC 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                         transform: translateX(60%);
                         opacity: 0;
-                        transition: all .5s;
+                        transition: all .3s;
                         z-index: 10;
                     }
                         header ul li:hover ul {
@@ -87,28 +73,24 @@ header {
     /*fin de barra de navegacion*/
     /*banner*/
     .banner {
-        display: block;
         position: absolute;
-        margin-top: 7em;
-        margin-left: 1%;
-        width: 97%;
-        height: 300px;
-        border: .4em solid #aa1f00;
-        border-radius: .7em;
+        margin-top: 5.95em;
+        width: 100%;
+        height: 470px;
         background-size: 100% 100%;
         animation: banner 10s infinite;
         animation-direction: alternate;
     }
         @keyframes banner {
             0%, 30% {
-                background-image: url(http://placeimg.com/1000/300/tech/grayscale);
+                background-image: url(images/main_visual.png);
                 opacity: 1;
             }
             31%, 34% {
                 opacity: 0.1;
             }
             35%, 65% {
-                background-image: url(http://placeimg.com/1000/300/tech/grayscale?t=1531435641443);
+                background-image: url(images/banner1.jpg);
                 opacity: 1;
             }
             66%, 69% {
@@ -116,33 +98,29 @@ header {
             }
             70%, 100% {
                 opacity: 1;
-                background-image: url(http://placeimg.com/1000/300/tech/grayscale?t=1531435651499);
+                background-image: url(images/banner2.jpg);
             }
         }
     /*fin del banner*/    
 /*main*/
 .top {
-    display: flex;
-    margin-left: 6.3%;
-    margin-top: -2%;
-    width: 88%;
-    background-color: #aa1f00;
-    border-radius: .3em .3em 0 0;
+    position: relative;
+    margin: auto;
+    margin-top: 21em;
+    width: 80%;
+    font-family: pt-sans, sans-serif;
     font-style: italic;
+    font-size: 150%;
+    color: #1F86CB;
 }
     .topp {
         float: left;
-        font-size: 150%;
-        margin-left: 4%;
         }
     .topg {
         float: right;
-        font-size: 150%;
-        margin-left: 32%;
     }
 .tops {
     position: relative;
-    height: 1145px;
 }
         .toppagos ul {
             float: left;
@@ -150,39 +128,40 @@ header {
             position: relative;
             list-style: none;
             margin-left: 1%;
-            padding-top: 1%;
-            background-color: #aa1f00;
-            border-radius: .3em 0 .3em .3em;    
+            padding-top: 1%;   
         }
             .toppagos ul li {
                 display: inline-block;
                 margin-bottom: 3%;
                 margin-right: 2%;
                 margin-left: 3%;
-                border: #000000 10px;
             }
             .toppagos ul li:nth-child(odd) {
-                background-color: #d1d1d1;
-                border-radius: .3em;
+                background-color: #1FCBA3;
             }
             .toppagos ul li:nth-child(even) {
-                background-color: #919191;
-                border-radius: .3em;
+                background-color: #1F86CB;
             }
                 .toppagos ul li img {
                     float: left;
                     margin-right: 1%;
                     margin-left: -1%;
-                    border-radius: .3em 0 0 .3em;
                 }
                 .toppagos ul li p {
                     text-align: center;
-                    padding-top: 4.5%;
+                    padding-top: 2.5%;
+                    color: #ffffff;
+                    font-family: mada, sans-serif;
                 }
-                    .toppagos ul li p em {
+                    .toppagos ul li p a {
                         font-size: 150%;
-                        color: #aa1f00;
+                        color: #8414BC;
                         font-weight: bold;
+                        font-family: varela-round, sans-serif;
+                        text-decoration: none;
+                    }
+                    .toppagos ul li p a:hover {
+                        color: #ffffff;
                     }
         .topgratis ul {
             position: relative;
@@ -191,51 +170,77 @@ header {
             list-style: none;
             margin-right: 1%;
             padding-top: 1%;
-            background-color: #aa1f00;
-            border-radius: 0 .3em .3em .3em;
         }
             .topgratis ul li {
                 display: inline-block;
                 margin-bottom: 3%;
                 margin-right: 2%;
                 margin-left: 3%;
-                border: #000000 10px;
             }
             .topgratis ul li:nth-child(even) {
-                background-color: #d1d1d1;
-                border-radius: .3em;
+                background-color: #1FCBA3;
             }
             .topgratis ul li:nth-child(odd) {
-                background-color: #919191;
-                border-radius: .3em;
+                background-color: #1F86CB;
             }
                 .topgratis ul li img {
                     float: left;
                     margin-right: 1%;
                     margin-left: -1%;
-                    border-radius: .3em 0 0 .3em;
                 }
                 .topgratis ul li p {
                     text-align: center;
-                    padding-top: 4.5%;
+                    padding-top: 2.5%;
+                    color: #ffffff;
+                    font-family: mada, sans-serif;
                 }
-                    .topgratis ul li p em {
+                    .topgratis ul li p a {
                         font-size: 150%;
-                        color: #aa1f00;
+                        color: #8414BC;
                         font-weight: bold;
+                        font-family: varela-round, sans-serif;
+                        text-decoration: none;
+                    }
+                    .topgratis ul li p a:hover {
+                        color: #ffffff;
                     }
 /*footer*/                   
-footer {
-    position: relative;
-    background-color: #000000;
-    height: 63px;
+footer  {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    height: 5em;
+    background: -moz-linear-gradient(top, #ffffff 0%, #8414BC 53%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#8414BC 53%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 25%,#8414BC 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-    footer a {
-        color: #ffffff;
+    footer img {
+        width: 140px;
+        height: 30px;
+        margin-right: 33em;
+        margin-top: -.38985em;
     }
-    footer li {
-        margin: auto;
-        width: 4%;
-        padding: .5%;
+    footer ul {
+        position: relative;
         list-style: none;
+        display: flex;
+        list-style: none;
+        margin: auto;
+        margin-top: 1.5em;
+        margin-right: 9em;
+        width: 80%;
     }
+    
+        footer ul li {
+            text-align: center;
+            padding-left: 2em;
+        }
+            footer ul li a {
+                color: #1F86CB;
+                text-decoration: none;
+                font-family: varela-raund, sans-serif;
+                font-weight: bold;
+            }
+            footer a:hover {
+                color: #1FCBA3;
+            }
